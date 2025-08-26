@@ -47,7 +47,7 @@ class TestLogin:
         assert "Вход" in driver.page_source
 
     def test_login_from_password_recovery_page(self, driver):
-        # Переход на страницу восстановления пароля, затем на страницу входа
+        # Переход на страницу восстановления пароля, потом на страницу входа
         driver.find_element(*Locators.LOGIN_BUTTON_MAIN).click()
         time.sleep(2)
 

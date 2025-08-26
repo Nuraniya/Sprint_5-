@@ -5,7 +5,7 @@ import random
 
 @pytest.fixture
 def driver():
-    # Простая версия без webdriver_manager
+    # версия без webdriver_manager
     driver = webdriver.Chrome()
     driver.get("https://stellarburgers.nomoreparties.site/")
     driver.maximize_window()

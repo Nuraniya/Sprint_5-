@@ -30,7 +30,7 @@ class TestRegistrationPage:
             EC.element_to_be_clickable(Locators.REGISTER_LINK)
         ).click()
 
-        # Заполняем форму с коротким паролем
+        # Форма с коротким паролем
         WebDriverWait(driver, 10).until(
             EC.visibility_of_element_located(Locators.NAME_INPUT_REGISTER)
         )

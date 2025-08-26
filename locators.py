@@ -9,7 +9,7 @@ class Locators:
     LOGO = (By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]")
     ORDER_BUTTON = (By.XPATH, "//button[contains(text(), 'Оформить заказ')]")
 
-    # Страница регистрации
+    # Регистрация
     REGISTER_LINK = (By.XPATH, "//a[contains(text(), 'Зарегистрироваться')]")
     NAME_INPUT_REGISTER = (By.XPATH, "//label[contains(text(), 'Имя')]/following-sibling::input")
     EMAIL_INPUT_REGISTER = (By.XPATH, "//label[contains(text(), 'Email')]/following-sibling::input")

@@ -5,7 +5,7 @@ from locators import Locators
 
 class TestConstructor:
     def test_navigate_to_buns_section(self, driver):
-        # Переход к соусам, затем к булкам
+        # Переход к соусам, потом к булкам
         driver.find_element(*Locators.SAUCES_SECTION).click()
         WebDriverWait(driver, 10).until(
             EC.visibility_of_element_located(Locators.ACTIVE_SECTION)

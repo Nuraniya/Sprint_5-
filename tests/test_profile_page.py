@@ -45,7 +45,7 @@ class TestProfilePage:
         assert "Соберите бургер" in driver.page_source
 
     def test_logout_from_personal_account(self, driver):
-        # Этот тест требует авторизации, поэтому просто проверяем переход
+        # Проверяем переход
         driver.find_element(*Locators.PERSONAL_ACCOUNT_BUTTON).click()
 
         # Проверяем, что перешли на страницу входа
